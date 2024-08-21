@@ -1,6 +1,7 @@
 import sys
 
 
+
 s = 'sspam'
 s = s.replace('s', 'x')
 print(s)
@@ -33,3 +34,11 @@ print(tap.replace('and', 'but under no circumstances'))
 
 lapt = 'My {1[kind]} runs {0.platform}'.format(sys, {'kind': 'laptop'})
 print(lapt)
+
+print('{0:10} = {1:10}'.format('spam', 123.4567))
+print('{0:>10} = {1:>30}'.format('spam', 123.4567))
+print('{0.platform:>10} = {1[kind]:>50}'.format(sys, dict(kind='laptop')))
+print('{0:,d}'.format(999999999))
+print('{dic} and {sap}'.format(dic='money', sap='bark'))
+print('%(money)s and %(sap)s' % dict(money='mani', sap='peri'))
+print('{0:f}, {1:.3f}, {2:05.2f}'.format(3.14159, 3.14159, 3.14159))
