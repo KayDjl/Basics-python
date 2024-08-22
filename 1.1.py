@@ -42,3 +42,7 @@ print('{0:,d}'.format(999999999))
 print('{dic} and {sap}'.format(dic='money', sap='bark'))
 print('%(money)s and %(sap)s' % dict(money='mani', sap='peri'))
 print('{0:f}, {1:.3f}, {2:05.2f}'.format(3.14159, 3.14159, 3.14159))
+
+s = "s,pa,m"
+print(s[2:4])
+print(s.split(',')[1])
