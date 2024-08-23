@@ -5,3 +5,26 @@ L = list(range(1, 75))
 print (L)
 L[len(L):] = [666, 777, 888]
 print(L)
+t = ['2', '4', '1', '9']
+t.sort(reverse=True)
+print(t)
+print(sorted(t))
+t.extend(['7', 5])
+print(t)
+t.pop()
+print(t)
+t.reverse()
+print(t)
+t = dict(one='y', two='b')
+u = list(t.keys())
+print(u)
+c = []
+for i in t.items():
+    c.append(i)
+print(c)
+k = input('Bbb:' )
+print(2 + int(k))
+hech = {'pizz':'moriar', 'lacryni':'lenti', 'bachi':'hyri'}
+print(hech['pizz'])
+print([key for key in hech.keys() if hech[key] == 'hyri'])
+print([key for (key, value) in hech.items() if value == 'lenti'])
