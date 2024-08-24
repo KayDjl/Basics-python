@@ -28,3 +28,24 @@ hech = {'pizz':'moriar', 'lacryni':'lenti', 'bachi':'hyri'}
 print(hech['pizz'])
 print([key for key in hech.keys() if hech[key] == 'hyri'])
 print([key for (key, value) in hech.items() if value == 'lenti'])
+
+matrix = {}
+matrix[(2, 3, 6)] = 88
+matrix[(1, 9, 4)] = 38
+x = input()
+x = int(x)
+y = input()
+y = int(y)
+z = input()
+z = int(z)
+if (x, y, z) in matrix:
+    print(matrix[(x, y, z)])
+else:
+    print(0)
+    
+d = {k: v for (k, v) in zip(['a', 'b', 'c'], [1, 2, 3])}
+print(d)
+
+mid = list(range(1, 256))
+di = {c: c**2 for c in mid}
+print(di[186])
