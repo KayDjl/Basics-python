@@ -49,3 +49,8 @@ print(d)
 mid = list(range(1, 256))
 di = {c: c**2 for c in mid}
 print(di[186])
+
+m = dict(li='1', ri='2')
+ky = m.keys()
+for i in sorted(ky):
+    print(i, m[i])
