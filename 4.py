@@ -1,4 +1,6 @@
 import json
+import struct
+
 
 """
 myfile = open('textf.txt', 'w')
@@ -34,7 +36,7 @@ print(chars)
 kil = [eval(p) for p in chars]
 print(kil)
 """
-
+"""
 name = dict(first='bob', last='dev')
 rec = dict(name=name, job=['meb', 'mgr'], age=40.5)
 print(rec)
@@ -44,3 +46,35 @@ print(o == rec)
 
 json.dump(rec, fp=open('jsonfile.txt', 'w'), indent=4)
 print(open('jsonfile.txt').read())
+"""
+"""
+myfl = open('bytefile.bin', 'wb')
+data = struct.pack('>i4sh', 7, b'spam', 8)
+print(data)
+myfl.write(data)
+myfl.close()
+f = open('bytefile.bin', 'rb')
+data1 = f.read()
+print(data)
+values = struct.unpack('>i4sh', data1)
+print(values)
+"""
+A = [1, 2, 3]
+B = {'a': 4, 'b': 4}
+L = [10, A, 84]
+D = {'x':B, 'y':14}
+A[1] = 'br'
+print("{}\n{}\n{}\n{}\n".format(A, B, L, D))
+N = list(A)
+M = B.copy()
+N[1] = 'Ni'
+M['col'] = 'lenti'
+print("{}\n{}\n{}\n{}\n".format(A, B, N, M))
+
+pin = 'a sssssppppppaaaaaammmmmm preee a lot longer string'
+din = 'a sssssppppppaaaaaammmmmm preee a lot longer string'
+print(pin == din, pin is din)
+
+pin = [1, 2, 3]
+din = [1, 2, 3]
+print(pin == din, pin is din)
