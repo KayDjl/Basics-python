@@ -75,6 +75,6 @@ pin = 'a sssssppppppaaaaaammmmmm preee a lot longer string'
 din = 'a sssssppppppaaaaaammmmmm preee a lot longer string'
 print(pin == din, pin is din)
 
-pin = [1, 2, 3]
+pin = [1, 2, 4]
 din = [1, 2, 3]
 print(pin == din, pin is din)
