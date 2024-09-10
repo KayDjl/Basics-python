@@ -1,6 +1,7 @@
 #coding: utf-8
 choice = 'pet'
 #Аналог switch\case
+"""
 print({"yert": 1.22,
        "peri": 183,
        "pet": 1.77,
@@ -25,3 +26,26 @@ if x and y:
     print(1)
 else:
     print(2)
+
+by = input("Number: ")
+mt = int(by) // 2
+while mt > 1:
+    if int(by) % mt == 0:
+        print(by, "somnosgetel", mt)
+        break
+    mt -= 1
+else:
+    print(by, "easy")
+"""
+for ((a, b), c) in (([1, 2], 4), ['MY', 1], ((6, 7), [7])):
+    print(a, b, c)
+   
+file = open('jsonfile.txt', 'r')
+while True:
+    char = file.read(10)
+    if not char:
+        break
+    print(char)
+        
+for char in open('jsonfile.txt').readlines():
+    print(char.rstrip())
