@@ -32,3 +32,9 @@ d = dict(zip(k1, k2))
 print(d)
 
 for i in os.popen('systeminfo'):print(i.rstrip())
+
+for i in 'spam':
+    print(i, end='')
+else:
+    print('\nEnd')
+    
