@@ -5,6 +5,6 @@ def instens(seq1, seq2):
             res.append(i)
     return res
 
-x = 'spam'
+x = 'spamM'
 p = 'sram'
 print(instens(x, p))
