@@ -21,3 +21,10 @@ def karg(a: 's', b: (1, 255), c: int = 12) -> int:
 print(karg("Ham", "spam", "nam"))
 print(karg.__annotations__)
     
+L = range(0 , 255)
+x = list(map(lambda y: y**2, L))
+print(x)
+
+xxx = list(filter((lambda x: x > 0), range(-100, 100)))
+print(xxx)
+    
