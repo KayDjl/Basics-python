@@ -1,3 +1,6 @@
+from functools import reduce
+
+
 def echo(message):
     print(message)
     
@@ -27,4 +30,15 @@ print(x)
 
 xxx = list(filter((lambda x: x > 0), range(-100, 100)))
 print(xxx)
+
+print(reduce((lambda x, y: x * y), range(1, 255)))
     
+lists = range(1, 10)
+res = lists[0]
+for i in lists[1:]:
+    res += i
+print(res)
+
+rvadr = [x ** 2 for x in range(10) if x % 2 == 0]
+rvadr1 = list(map((lambda x: x ** 2), filter((lambda x: x % 2 == 0), range(10))))
+print(rvadr, rvadr1, sep="\n")
