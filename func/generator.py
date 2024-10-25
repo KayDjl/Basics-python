@@ -12,5 +12,19 @@ print(next(g))
 print(next(g))
 print(next(g))
 print(next(g))
-print(next(g))
-print(next(g))
+
+
+l = 'spam'
+for i in l:
+    l = l[1:] + l[:1]
+    print(l)
+    
+p = 'mans'
+for i in range(len(p)):
+    x = p[i:] + p[:i]
+    print(x)
+    
+def tas(seq):
+    return [seq[i:] + seq[:i] for i in range(len(seq))]
+
+print(tas("likson"))
