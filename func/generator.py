@@ -28,3 +28,7 @@ def tas(seq):
     return [seq[i:] + seq[:i] for i in range(len(seq))]
 
 print(tas("likson"))
+p = "alisa"
+k = lambda seq: (seq[i:] + seq[:i] for i in range(len(seq)))
+
+print(list(k(p)))
